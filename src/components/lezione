@@ -1,0 +1,33 @@
+# STATE MANAGEMENT:
+
+# posso passarei dei dato da un componente a un figli:
+# es:
+
+# scrive la consegna in una chat condivisa:
+# e ognuno ha la possibilità di accedere in ogni momento autonomamente.
+
+# in vue:
+# fonte dati - sorgente unica- raggiungibile dai nostri componenti:
+
+# i nostri dati sono dinamici e tutti i punti in cui vengono usati si aggiornano in base alla modifica
+
+# in un file :
+# STORE.JS dentro la cartella src:
+
+# nella quale avremo la funzione reactive:
+
+# import{reactive} from 'vue'
+
+# export const store = reactive({
+#     searchText: "",
+#     loading: true,
+# })
+
+# e poi nel file nel quale voglio usarlo lo importo:
+# <script>
+#     import {store} from '../store.js'
+# </script>
+
+# se lo store mi serve solo js allora posso evitare di scriverlo come chiave nel data
+
+# quindi di base lo mettiamo sempre nel data e si richiama con il this.store
